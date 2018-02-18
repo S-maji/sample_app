@@ -1,5 +1,5 @@
 <%= form_for(@micropost) do |f| %>
-  <%= render 'devise/shared/error_messages' %>
+  <%= render  'devise/shared/micropost_error', object: f.object %>
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
