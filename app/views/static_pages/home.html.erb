@@ -5,12 +5,15 @@
         <%= render 'devise/shared/user_info' %>
       </section>
       <section>
+        <%= render 'devise/shared/stats' %>
+      </section>
+      <section>
         <%= render 'devise/shared/micropost_form' %>
       </section>
     </aside>
     <div class="col-md-8">
       <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
+      <%= render 'devise/shared/feed' %>
     </div>
   </div>
 <% else %>
