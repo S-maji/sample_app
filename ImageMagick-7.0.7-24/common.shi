@@ -1,0 +1,22 @@
+# Test environment
+top_srcdir='/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24'
+top_builddir='/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24'
+
+set -a
+COMPARE="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick compare"
+COMPOSITE="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick composite"
+CONJURE="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick conjure"
+CONVERT="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick convert"
+DISPLAY="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick display"
+IDENTIFY="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick identify"
+MAGICK="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick"
+MONTAGE="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities/magick montage"
+VALIDATE="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/tests/validate"
+DRAWTEST="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/tests/drawtest"
+WANDTEST="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/tests/wandtest"
+LD_LIBRARY_PATH="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/magick/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/coders"
+MAGICK_CONFIGURE_PATH="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/config:/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/config"
+MAGICK_FILTER_MODULE_PATH="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/filters"
+PATH="/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/utilities:/home/ec2-user/environment/sample_app/ImageMagick-7.0.7-24/tests:${PATH}"
+set +a

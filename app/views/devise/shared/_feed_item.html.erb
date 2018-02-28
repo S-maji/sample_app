@@ -4,6 +4,13 @@
     <%= link_to feed_item.user.name, feed_item.user %>
   </span>
   <span class="content"><%= feed_item.content %></span>
+  
+  <!--画像の表示-->
+  <div class ="image">
+    <span class = "image_size"><%= image_tag feed_item.image.url,:width => '128px' %></span>
+  </div>
+  <!--ここまで-->
+  
   <span class="timestamp">
     Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span>

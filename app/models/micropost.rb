@@ -11,4 +11,5 @@ class Micropost < ActiveRecord::Base
           user_id: user.id)
     end
     
+    mount_uploader :image, ImageUploader
 end
