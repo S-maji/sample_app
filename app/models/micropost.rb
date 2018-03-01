@@ -11,5 +11,8 @@ class Micropost < ActiveRecord::Base
           user_id: user.id)
     end
     
+    #画像投稿機能
     mount_uploader :image, ImageUploader
+    # 投稿の際の画像のサイズをバリデーション
+    validates :image, file_size: {maximum: 1.megabytes.to_i}
 end
